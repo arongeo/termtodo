@@ -6,7 +6,7 @@ A To-Do Command Line Program.
 
 ## Building the program
 ### macOS
-Use ```make mac``` to compile termtodo. If you want to add it permanently to your Command Line Programs place the compiled binary in ```/usr/local/bin```
+Use ```make mac``` to compile termtodo. If you want to add it permanently to your Command Line Programs place the compiled binary in ```/usr/local/bin```.
 
 ### Windows
 I couldn't test on Windows so I don't really know if termtodo_win.cpp will work.
