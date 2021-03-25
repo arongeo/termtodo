@@ -10,13 +10,13 @@
 
 // Define the Maximum of number of todos, and the maximum number of characters in a string
 #define MAX_ARR_SIZE 256
-#define SPACE_SIZE 35
 
 // Include filestream
 #include <iostream>
 #include <fstream>
 #include <string>
 #include "conversions.hpp"
+#include <filesystem>
 
 // Define an todosay of the todos
 std::string todos[MAX_ARR_SIZE] = {};
@@ -38,12 +38,30 @@ void printHelp() {
 }
 
 void list_todos() {
-    std::cout << "ID\tTo-Do                                   Status" << std::endl;
+    int longest = 0;
+    for (int a = 0; a<num; a++) {
+        if (todos[a].length() > longest) {
+            longest = todos[a].length();
+        }
+    }
+    std::string topSpaces = "";
+    for (int b = 0; b<longest; b++) {
+        topSpaces = topSpaces + " ";
+    }
+    if (longest != 0) {
+        std::cout << "ID\tTo-Do" << topSpaces << "Status" << std::endl;
+    } else {
+        std::cout << "You don't have To-Do's." << std::endl;
+        exit(1);
+    }
     for (int i = 0; i<num; i++) {
-        int currTodoLen = todos[i].length() - 5;
         std::string spaces = "";
-        for (int j = 0; j<SPACE_SIZE-currTodoLen; j++) {
-            spaces = spaces + " ";
+        if (todos[i].length() == longest) {
+            spaces = "     ";
+        } else {
+            for (int c = 0; c<(longest-todos[i].length())+5; c++) {
+                spaces = spaces + " ";
+            }
         }
         switch (status[i]) {
             case 0: {
@@ -60,6 +78,15 @@ void list_todos() {
             }
         }
         spaces = "";
+    }
+}
+
+void checkForDir(std::string path) {
+    std::__fs::filesystem::create_directory(path);
+    if (!std::ifstream(path+"todos.todo")) {
+        std::ofstream todoFile (path+"todos.todo");
+        std::ofstream numFile (path+"todo_num.todo");
+        std::ofstream statFile (path+"statuses.todo");
     }
 }
 

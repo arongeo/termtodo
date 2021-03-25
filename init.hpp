@@ -14,6 +14,7 @@
 #include "conversions.hpp"
 
 void init(int argc, char** argv, std::string path) {
+    checkForDir(path);
     if (argc == 1) {
         printHelp();
     }

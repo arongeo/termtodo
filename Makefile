@@ -1,5 +1,5 @@
-macos:
-	g++ termtodo_mac.cpp -o termtodo
+mac:
+	g++ -std=c++17 termtodo_mac.cpp -o termtodo
 
 win:
-	g++ termtodo_win.cpp -o termtodo
+	g++ -std=c++17 termtodo_win.cpp -o termtodo
