@@ -32,8 +32,6 @@ void printHelp() {
     std::cout << "del             \tDeletes a To-Do from the To-Do list. Correct use: termtodo del <ID of To-Do>" << std::endl;
     std::cout << "set             \tSet a To-Do. Correct use: termtodo set <ID of To-Do> '<Set to>'" << std::endl;
     std::cout << "setstat         \tSet a To-Do's status. Correct use: termtodo setstat <ID of To-Do> <Status to set>" << std::endl;
-    std::cout << "<indev>set      \tSet a To-Do. Correct use: termtodo set <ID of To-Do> '<Set to>'" << std::endl;
-    std::cout << "<indev>setstat  \tSet a To-Do's status. Correct use: termtodo setstat <ID of To-Do> <Status to set>" << std::endl;
     std::cout << "                \tStatus can be: none, pending and done" << std::endl;
 }
 
