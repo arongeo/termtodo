@@ -13,5 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make macos
-      run: make macos
+    - name: make mac
+      run: make mac
