@@ -103,13 +103,13 @@ int findStat(const std::string &str_stat) {
 
 void save_todos(std::string path);
 
-void setstat(int id, const std::string &str_stat, std::string path) {
+void setstat(int id, const std::string &str_stat, const std::string &path) {
     int stat = findStat(str_stat);
     status[id] = stat;
     save_todos(path);
 }
 
-void set(int id, const std::string &todo, std::string path) {
+void set(int id, const std::string &todo, const std::string &path) {
     todos[id] = todo;
     save_todos(path);
 }
