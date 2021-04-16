@@ -88,7 +88,7 @@ void checkForDir(std::string path) {
     }
 }
 
-int findStat(std::string str_stat) {
+int findStat(const std::string &str_stat) {
     if ((str_stat == "none") | (str_stat == "None") | (str_stat == "0") | (str_stat == "NONE")) {
         return 0;
     }
@@ -103,18 +103,18 @@ int findStat(std::string str_stat) {
 
 void save_todos(std::string path);
 
-void setstat(int id, std::string str_stat, std::string path) {
+void setstat(int id, const std::string &str_stat, std::string path) {
     int stat = findStat(str_stat);
     status[id] = stat;
     save_todos(path);
 }
 
-void set(int id, std::string todo, std::string path) {
+void set(int id, const std::string &todo, std::string path) {
     todos[id] = todo;
     save_todos(path);
 }
 
-void addTodo(std::string todo, int stat) {
+void addTodo(const std::string &todo, int stat) {
     if (stat == 3) {
         std::cout << "Invalid Status." << std::endl;
         exit(1);
@@ -124,7 +124,7 @@ void addTodo(std::string todo, int stat) {
     num = num + 1;
 }
 
-void delTodo(std::string str_id) {
+void delTodo(const std::string &str_id) {
     int int_id = strToInt(str_id);
     for (int i = int_id; i<num; i++) {
         todos[i] = todos[i+1];
@@ -135,7 +135,7 @@ void delTodo(std::string str_id) {
     }
 }
 
-void load_todos(std::string path) {
+void load_todos(const std::string &path) {
     std::ifstream todoFile (path+"todos.todo");
     std::ifstream numFile (path+"todo_num.todo");
     std::ifstream statFile (path+"statuses.todo");
@@ -159,7 +159,7 @@ void load_todos(std::string path) {
     numFile.close();
 }
 
-void save_todos(std::string appPath) {
+void save_todos(const std::string &appPath) {
     std::ofstream todoFile;
     std::ofstream todoNumFile;
     std::ofstream todoStatFile;

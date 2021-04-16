@@ -12,7 +12,7 @@
 #include <string>
 #include <sstream>
 
-int strToInt(std::string n) {
+int strToInt(const std::string &n) {
     int strToInt_num;
     std::stringstream ss;
     ss << n;
