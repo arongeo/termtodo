@@ -3,14 +3,12 @@ A To-Do Command Line Program.
 
 ![Compiling-macOS](https://github.com/mrmalac/termtodo/workflows/Compiling-macOS/badge.svg)
 
-
 ## Building the program
 ### macOS
 Use ```make mac``` to compile termtodo. If you want to add it permanently to your Command Line Programs place the compiled binary in ```/usr/local/bin```.
 
 ### Windows
 I tested it on Windows. It doesn't show an error in the compiler, but it doesn't output any file either.
-
 
 ## Copyright
 ! You can fork my code, and edit my code, but please provide credit for it. !
