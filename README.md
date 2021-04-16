@@ -2,6 +2,7 @@
 A To-Do Command Line Program.
 
 ![Compiling-macOS](https://github.com/mrmalac/termtodo/workflows/Compiling-macOS/badge.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/67f058f93dcb4525ab9e2dc52b05a92b)](https://www.codacy.com/gh/mrmalac/termtodo/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mrmalac/termtodo&amp;utm_campaign=Badge_Grade)
 
 ## Building the program
 ### macOS
