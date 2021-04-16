@@ -1,4 +1,7 @@
 # termtodo
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a37e5dfc3df40ec8e9515cf566c3041)](https://app.codacy.com/gh/mrmalac/termtodo?utm_source=github.com&utm_medium=referral&utm_content=mrmalac/termtodo&utm_campaign=Badge_Grade_Settings)
+
 A To-Do Command Line Program.
 
 ![Compiling-macOS](https://github.com/mrmalac/termtodo/workflows/Compiling-macOS/badge.svg)
