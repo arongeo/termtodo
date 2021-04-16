@@ -89,13 +89,13 @@ void checkForDir(std::string path) {
 }
 
 int findStat(std::string str_stat) {
-    if (str_stat == "none" | str_stat == "None" | str_stat == "0" | str_stat == "NONE") {
+    if ((str_stat == "none") | (str_stat == "None") | (str_stat == "0") | (str_stat == "NONE")) {
         return 0;
     }
-    if (str_stat == "pending" | str_stat == "Pending" | str_stat == "1" | str_stat == "PENDING") {
+    if ((str_stat == "pending") | (str_stat == "Pending") | (str_stat == "1") | (str_stat == "PENDING")) {
         return 1;
     }
-    if (str_stat == "done" | str_stat == "Done" | str_stat == "2" | str_stat == "DONE") {
+    if ((str_stat == "done") | (str_stat == "Done") | (str_stat == "2") | (str_stat == "DONE")) {
         return 2;
     }
     return 3;

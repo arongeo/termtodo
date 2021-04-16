@@ -23,7 +23,7 @@ void init(int argc, char** argv, std::string path) {
         if (std::string(argv[1]) == "list") {
             list_todos();
         }
-        if (std::string(argv[1]) == "-h" | std::string(argv[1]) == "help") {
+        if ((std::string(argv[1]) == "-h") | (std::string(argv[1]) == "help")) {
             printHelp();
         }
         if (std::string(argv[1]) != "list" && std::string(argv[1]) != "-h" && std::string(argv[1]) != "help") {
