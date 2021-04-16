@@ -101,7 +101,7 @@ int findStat(const std::string &str_stat) {
     return 3;
 }
 
-void save_todos(std::string path);
+void save_todos(const std::string &path);
 
 void setstat(int id, const std::string &str_stat, const std::string &path) {
     int stat = findStat(str_stat);
