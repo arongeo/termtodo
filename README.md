@@ -10,6 +10,9 @@ Use ```make mac``` to compile termtodo. If you want to add it permanently to you
 ### Windows
 I tested it on Windows. It doesn't show an error in the compiler, but it doesn't output any file either.
 
+### Linux
+I tested it on Ubuntu. Please choose your desired path for your todos in todo.hpp. 
+
 ## Copyright
 ! You can fork my code, and edit my code, but please provide credit for it. !
 

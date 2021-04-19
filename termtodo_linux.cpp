@@ -10,9 +10,9 @@
 #include "init.hpp"
 
 std::string username = getenv("USER");
-std::string appPath = "/Users/"+username+"/Library/ApplicationSupport/termtodo/";
+std::string appPath = "*INSERT DESIRED PATH HERE*";
 
 int main(int argc, char** argv) {
-    std::__fs::filesystem::create_directory(appPath);
+    std::filesystem::create_directory(appPath);
     init(argc, argv, appPath);
 }

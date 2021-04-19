@@ -80,7 +80,6 @@ void list_todos() {
 }
 
 void checkForDir(std::string path) {
-    std::__fs::filesystem::create_directory(path);
     if (!std::ifstream(path+"todos.todo")) {
         std::ofstream todoFile (path+"todos.todo");
         std::ofstream numFile (path+"todo_num.todo");
