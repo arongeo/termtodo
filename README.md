@@ -16,6 +16,4 @@ I tested it on Ubuntu. Please choose your desired path for your todos in todo.hp
 ## Copyright
 ! You can fork my code, and edit my code, but please provide credit for it. !
 
-*Testing Something*
-
 By definition if a GitHub repository dosen't have a licence, it is automatically protected by intellectual property.
